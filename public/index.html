@@ -5,19 +5,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+    <div class="container">
+      <div class="card">
+        <div class="card-block">
+          <div id="trucker">
+            <div class="form-group row">
+              <label for="trucker-name" class="col-2 col-form-label">Trucker name</label>
+              <div class="col-10">
+                <input class="form-control name" type="text" placeholder="FEDEX..." id="trucker-name">
+              </div>
+            </div>
+            <div id="price-by-km">
+              <div class="form-group row">
+                <label for="price-by-km" class="col-2 col-form-label">Price by Km</label>
+                <div class="col-10">
+                  <input class="form-control name" type="text" placeholder="102..." id="price-by-km">
+                </div>
+              </div>
+            </div>
+          <div id="price-by-cubic">
+            <div class="form-group row">
+                <label for="price-by-cubic" class="col-2 col-form-label">Price by cubic</label>
+              <div class="col-10">
+                  <input class="form-control name" type="text" placeholder="30..." id="price-by-cubic">
+              </div>
+            </div>
+          </div>
+             <div id="shipper">
+                <div class="form-group row">
+                  <label for="shipper" class="col-2 col-form-label">Shipper name</label>
+                <div class="col-10">
+                <input class="form-control name" type="text" placeholder="O Tacos..." id="price-by-cubic">
+              </div>
+            </div>
+          </div>
+            <div id="Distance in km">
+            <div class="form-group row">
+              <label for="Distance in km" class="col-2 col-form-label">Distance in km</label>
+              <div class="col-10">
+                <input class="form-control name" type="text" placeholder="345..." id="Distance in km">
+              </div>
+            </div>
+          </div>
+            <div id="Volume in m3">
+            <div class="form-group row">
+              <label for="Volume in m3" class="col-2 col-form-label">Volume in m3</label>
+              <div class="col-10">
+                <input class="form-control name" type="text" placeholder="208..." id="Volume in m3">
+              </div>
+            </div>
+          </div>
+          <div id="Deductible option">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">
+               Deductible reduction
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="compute">Compute</button>
+      <div id="actors"></div>
     </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+    
     <script src="convargo.js"></script>
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
