@@ -19,53 +19,56 @@
               <div class="form-group row">
                 <label for="price-by-km" class="col-2 col-form-label">Price by Km</label>
                 <div class="col-10">
-                  <input class="form-control name" type="text" placeholder="102..." id="price-by-km">
+                  <input class="form-control price-by-km" type="text" placeholder="102..." id="price-by-km">
                 </div>
               </div>
             </div>
-          <div id="price-by-cubic">
-            <div class="form-group row">
+            <div id="price-by-cubic">
+              <div class="form-group row">
                 <label for="price-by-cubic" class="col-2 col-form-label">Price by cubic</label>
-              <div class="col-10">
-                  <input class="form-control name" type="text" placeholder="30..." id="price-by-cubic">
-              </div>
-            </div>
-          </div>
-             <div id="shipper">
-                <div class="form-group row">
-                  <label for="shipper" class="col-2 col-form-label">Shipper name</label>
                 <div class="col-10">
-                <input class="form-control name" type="text" placeholder="O Tacos..." id="price-by-cubic">
+                  <input class="form-control price-by-cubic" type="text" placeholder="30..." id="price-by-cubic">
+                </div>
               </div>
             </div>
           </div>
-            <div id="Distance in km">
+          <div id="shipper">
+            <div class="form-group row">
+              <label for="shipper" class="col-2 col-form-label">Shipper name</label>
+              <div class="col-10">
+                <input class="form-control name" type="text" placeholder="O Tacos..." id="shipper-name">
+              </div>
+            </div>
+          </div>
+          <div id="Distance in km">
             <div class="form-group row">
               <label for="Distance in km" class="col-2 col-form-label">Distance in km</label>
               <div class="col-10">
-                <input class="form-control name" type="text" placeholder="345..." id="Distance in km">
+                <input class="form-control distance" type="text" placeholder="345..." id="Distance in km">
               </div>
             </div>
           </div>
-            <div id="Volume in m3">
+          <div id="Volume in m3">
             <div class="form-group row">
               <label for="Volume in m3" class="col-2 col-form-label">Volume in m3</label>
               <div class="col-10">
-                <input class="form-control name" type="text" placeholder="208..." id="Volume in m3">
+                <input class="form-control volume" type="text" placeholder="208..." id="Volume in m3">
               </div>
             </div>
           </div>
           <div id="Deductible option">
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="">
+                <input class="form-check-input option" type="checkbox" value="">
                Deductible reduction
               </label>
             </div>
           </div>
         </div>
       </div>
-      <button id="compute">Compute</button>
+      <div class="row justify-content-center">
+        <button class="btn btn-success" id="compute">Compute</button>
+      </div>
       <div id="actors"></div>
     </div>
     
