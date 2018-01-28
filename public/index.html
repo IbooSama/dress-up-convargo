@@ -4,8 +4,14 @@
     <title>CSS/HTML Workshop with Convargo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
-  <body>
+  <body background="transport.jpg">
     <div class="container">
+      <div class="jumbotron jumbotron-fluid" style="color: blue;">
+        <div class="container">
+          <h2 class="display-3">Welcome to the transportation company!</h2>
+          <p class="lead">Here our tool where you can make your estimation</p>
+        </div>
+      </div>
       <div class="card">
         <div class="card-block">
           <div id="trucker">
@@ -67,9 +73,10 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <button class="btn btn-success" id="compute">Compute</button>
+        <button class="btn btn-primary" id="compute">Compute</button>
       </div>
-      <div id="actors"></div>
+      <div id="actors">
+      </div>
     </div>
     
     <script src="convargo.js"></script>
